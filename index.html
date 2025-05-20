@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentora AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            font-size: 24px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .nav-tab {
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #666;
+            text-align: center;
+        }
+
+        .nav-tab.active {
+            background-color: #4C6FFF;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .nav-tabs {
+                gap: 10px;
+            }
+
+            .nav-tab {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        .highlight {
+            color: #4C6FFF;
+            font-weight: bold;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            color: #4C6FFF;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .section-title {
+            font-size: 1.3em;
+            color: #333;
+            margin: 25px 0 15px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tips-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .tips-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: "✓";
+            color: #4C6FFF;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .rocket-emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        .thinking-emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        .disclaimer-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-tabs">
+            <a href="#about" class="nav-tab active">About Mentora</a>
+            <a href="#how-to-use" class="nav-tab">How To Use Mentora</a>
+            <a href="#disclaimer" class="nav-tab">Accuracy Disclaimer</a>
+        </nav>
+
+        <div class="content">
+            <div id="about" class="tab-content active">
+                <div class="hero">
+                    <img src="image1.jpg" alt="About Mentora">
+                    <h1><span class="emoji">📢</span> Meet <span class="highlight">✨Mentora✨</span> – Your 24/7 Study Companion!</h1>
+                </div>
+
+                <div class="description">
+                    You're preparing for a big exam? Feeling overwhelmed?  Wish you had a personal tutor available 24/7? Well, wish no more!  Meet Mentora, your new AI-powered study buddy, built to help you ace those tests.
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">What is Mentora?</h2>
+                    <p>More than just a chatbot, Mentora is a game-changer.  Think of it as having a highly skilled, incredibly patient tutor who lives right inside your phone or tablet. This isn't about rote memorization; it's about understanding, mastering concepts, and building confidence.  We've poured countless hours into research and development to create the most effective test preparation app, and Mentora is the culmination of that effort.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">How Mentora's AI Chatbot Works</h2>
+                    
+                    <h3 class="section-title">Smart Algorithm – Personalized & Adaptive Learning</h3>
+                    <p>At the heart of Mentora's AI chatbot is a sophisticated algorithm that constantly learns and adapts based on your performance and interactions. It's like having a personal tutor who observes your strengths and weaknesses and then crafts a customized learning plan just for you.</p>
+
+                    <h3 class="section-title">AI Model – Powered by ChatGPT-4.0</h3>
+                    <p>Mentora is built on ChatGPT-4.0, an advanced AI language model designed to understand natural language and generate intelligent, context-aware responses. Unlike traditional rule-based chatbots, it uses deep learning and natural language processing (NLP) to analyze your queries and provide clear hints and explanations. This allows Mentora to assist you in real-time, whether you need help understanding a complex concept, clarifying a question, or receiving study tips tailored to your exam.</p>
+
+                    <h3 class="section-title">Training – A Knowledge Base Built for Test Prep</h3>
+                    <p>Mentora is specifically trained for exam preparation, making it much more than a general AI assistant. It has been trained on comprehensive exam question banks, key study materials, and official references, ensuring its responses align with exam structures and commonly tested topics. By integrating domain-specific knowledge, Mentora provides reliable explanations and targeted study support to help you navigate your test prep efficiently.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">The Power of Mentora</h2>
+                    <ul class="feature-list">
+                        <li><strong>Personalized Learning Experience:</strong> Mentora tailors its recommendations based on your progress, helping you stay on track with relevant study suggestions. It ensures you focus on areas that need improvement while avoiding unnecessary repetition.</li>
+                        <li><strong>Encourages Independent Thinking:</strong> Instead of providing direct answers, Mentora offers hints and guidance to help you analyze problems and think critically. This approach strengthens problem-solving skills and long-term understanding.</li>
+                        <li><strong>Real-Time, Relevant Support:</strong> Mentora provides instant, context-aware assistance when you need it, helping you overcome challenges efficiently without disrupting your study flow.</li>
+                        <li><strong>Improves Study Efficiency:</strong> Mentora designs the most efficient study path to help you reach your target in the shortest time possible. With intelligent hints, timely reminders, and personalized guidance, it keeps you focused on essential concepts, ensuring every study session is optimized for maximum results.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="how-to-use" class="tab-content">
+                <div class="hero">
+                    <img src="image2.jpg" alt="How to use Mentora">
+                    <h1>How to use Mentora</h1>
+                </div>
+
+                <div class="description">
+                    Mentora is an intelligent learning assistant designed to support your study process. With its ability to provide contextual guidance and personalized recommendations, it helps you learn more effectively.
+                </div>
+
+                <p>You'll find Mentora right on the Main Screen and the Question Screen, making it easily accessible whenever you need assistance.</p>
+
+                <div class="section">
+                    <h2 class="section-title">How to use Mentora efficiently?</h2>
+
+                    <div class="section">
+                        <h3 class="section-title"><span class="rocket-emoji">🚀</span>Using AI-Generated Recommendations for Quick Assistance</h3>
+                        <p>Mentora adapts to your progress by offering tailored recommendations and insightful guidance, ensuring that every suggestion aligns with your learning path. Simply select the most suitable option, and the AI will provide the necessary support.</p>
+                        <p>These AI-generated recommendations help you stay on track without having to manually input your queries, saving time and improving study efficiency.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3 class="section-title"><span class="rocket-emoji">🚀</span>Manually Entering Questions as Needed</h3>
+                        <p>In addition to selecting AI-generated recommendations, you can ask Mentora direct questions based on your specific learning needs.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3 class="section-title"><span class="rocket-emoji">🚀</span>Tips for Using Mentora Effectively</h3>
+                        <p>To make the most of Mentora, keep these key points in mind:</p>
+                        <ul class="tips-list">
+                            <li><strong>Use AI-generated recommendations</strong> → Save time by selecting tailored suggestions from Mentora.</li>
+                            <li><strong>Think critically</strong> → AI is a tutor, not a replacement for independent learning. Always verify information and apply critical thinking.</li>
+                            <li><strong>Be specific with your questions</strong> → Clear and precise questions lead to more relevant responses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="disclaimer" class="tab-content">
+                <div class="hero">
+                    <img src="image3.jpg" alt="Accuracy Disclaimer">
+                    <h1>Accuracy Disclaimer</h1>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title"><span class="thinking-emoji">🤔</span>Why Does Mentora Make Mistakes?</h2>
+
+                    <div class="disclaimer-box">
+                        <h3 class="section-title">AI Lacks Human-Like Understanding</h3>
+                        <p>Mentora is built on advanced natural language processing models like GPT-4, which have been trained on vast amounts of text data. However, it does not "think" or "understand" like a human—it predicts words and phrases based on patterns rather than genuine comprehension. This means:</p>
+                        <ul class="tips-list">
+                            <li>It may misinterpret complex, vague, or ambiguous questions.</li>
+                            <li>It does not have real-world experience like a human expert.</li>
+                            <li>It cannot independently verify the latest news or updates unless explicitly programmed to do so.</li>
+                        </ul>
+                    </div>
+
+                    <div class="disclaimer-box">
+                        <h3 class="section-title">Limited Scope of Knowledge</h3>
+                        <p>Mentora is specifically designed to answer questions related to the app's content level and study path. It cannot provide information beyond this scope.</p>
+                        <ul class="tips-list">
+                            <li>Mentora does not replace external resources, such as official textbooks, real-world expert advice, or professional consultations.</li>
+                            <li>If a topic is outside its training data, it may try to generate a response based on similar concepts, which can lead to inaccuracies.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title"><span class="rocket-emoji">🚀</span>How We're Improving Mentora</h2>
+                        
+                        <div class="disclaimer-box">
+                            <h3 class="section-title">Continuous Learning & Updates</h3>
+                            <p>We are constantly refining Mentora to improve its ability to understand varied user inputs, provide clearer explanations, and expand its knowledge base with regular updates. These enhancements ensure more accurate and relevant study support.</p>
+                        </div>
+
+                        <div class="disclaimer-box">
+                            <h3 class="section-title">User Feedback Matters</h3>
+                            <p>Your feedback is essential in improving Mentora. If you encounter an incorrect or unclear response, let us know so we can fine-tune the system. For important facts, always cross-check with official references to ensure accuracy.</p>
+                        </div>
+
+                        <p class="description">We are committed to continuously improving Mentora to provide smarter, more effective study support. Thank you for being part of this journey!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.querySelectorAll('.nav-tab').forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Remove active class from all tabs and contents
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            // Add active class to clicked tab
+            tab.classList.add('active');
+            
+            // Show corresponding content
+            const contentId = tab.getAttribute('href').substring(1);
+            document.getElementById(contentId).classList.add('active');
+        });
+    });
+    </script>
+</body>
+</html>
